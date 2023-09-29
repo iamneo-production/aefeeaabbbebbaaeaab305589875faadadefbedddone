@@ -1,0 +1,119 @@
+-------------------------------------------------------------------------------
+Test set: com.example.springapp.SpringappApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 24, Errors: 0, Skipped: 0, Time elapsed: 4.705 s <<< FAILURE! - in com.example.springapp.SpringappApplicationTests
+testTreeModelHasTreeLifetimeField  Time elapsed: 0.231 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Field treeLifetime in class com.example.springapp.model.Tree does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkFieldExists(SpringappApplicationTests.java:204)
+	at com.example.springapp.SpringappApplicationTests.testTreeModelHasTreeLifetimeField(SpringappApplicationTests.java:138)
+
+testTreeControllerHasPostMappingAnnotation  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.controller.TreeController or annotation org.springframework.web.bind.annotation.PostMapping does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkAnnotationExists(SpringappApplicationTests.java:224)
+	at com.example.springapp.SpringappApplicationTests.testTreeControllerHasPostMappingAnnotation(SpringappApplicationTests.java:158)
+
+testTreeRepoExtendsJpaRepository  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.repository.TreeRepo or interface org.springframework.data.jpa.repository.JpaRepository does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkClassImplementsInterface(SpringappApplicationTests.java:214)
+	at com.example.springapp.SpringappApplicationTests.testTreeRepoExtendsJpaRepository(SpringappApplicationTests.java:143)
+
+testTreeModelHasUsedForField  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Field usedfor in class com.example.springapp.model.Tree does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkFieldExists(SpringappApplicationTests.java:204)
+	at com.example.springapp.SpringappApplicationTests.testTreeModelHasUsedForField(SpringappApplicationTests.java:133)
+
+testTreeModelHasEntityAnnotation  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.model.Tree or annotation javax.persistence.Entity does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkAnnotationExists(SpringappApplicationTests.java:224)
+	at com.example.springapp.SpringappApplicationTests.testTreeModelHasEntityAnnotation(SpringappApplicationTests.java:173)
+
+testGetAllTrees  Time elapsed: 0.13 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.example.springapp.SpringappApplicationTests.testGetAllTrees(SpringappApplicationTests.java:76)
+
+testUpdateTree  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.example.springapp.SpringappApplicationTests.testUpdateTree(SpringappApplicationTests.java:65)
+
+testGetOneTree  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.example.springapp.SpringappApplicationTests.testGetOneTree(SpringappApplicationTests.java:52)
+
+testTreeControllerHasPutMappingAnnotation  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.controller.TreeController or annotation org.springframework.web.bind.annotation.PutMapping does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkAnnotationExists(SpringappApplicationTests.java:224)
+	at com.example.springapp.SpringappApplicationTests.testTreeControllerHasPutMappingAnnotation(SpringappApplicationTests.java:163)
+
+testTreeControllerHasGetMappingAnnotation  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.controller.TreeController or annotation org.springframework.web.bind.annotation.GetMapping does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkAnnotationExists(SpringappApplicationTests.java:224)
+	at com.example.springapp.SpringappApplicationTests.testTreeControllerHasGetMappingAnnotation(SpringappApplicationTests.java:153)
+
+testTreeRepoClassExists  Time elapsed: 0.027 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.repository.TreeRepo does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkClassExists(SpringappApplicationTests.java:195)
+	at com.example.springapp.SpringappApplicationTests.testTreeRepoClassExists(SpringappApplicationTests.java:103)
+
+testApiServiceHasAutowiredField  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Field treeRepo in class com.example.springapp.service.ApiService does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkFieldExists(SpringappApplicationTests.java:204)
+	at com.example.springapp.SpringappApplicationTests.testApiServiceHasAutowiredField(SpringappApplicationTests.java:148)
+
+testTreeModelHasTreeNameField  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Field treeName in class com.example.springapp.model.Tree does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkFieldExists(SpringappApplicationTests.java:204)
+	at com.example.springapp.SpringappApplicationTests.testTreeModelHasTreeNameField(SpringappApplicationTests.java:128)
+
+testApiServiceClassExists  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.service.ApiService does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkClassExists(SpringappApplicationTests.java:195)
+	at com.example.springapp.SpringappApplicationTests.testApiServiceClassExists(SpringappApplicationTests.java:108)
+
+testTreeControllerClassExists  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.controller.TreeController does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkClassExists(SpringappApplicationTests.java:195)
+	at com.example.springapp.SpringappApplicationTests.testTreeControllerClassExists(SpringappApplicationTests.java:98)
+
+testTreeModelClassExists  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.model.Tree does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkClassExists(SpringappApplicationTests.java:195)
+	at com.example.springapp.SpringappApplicationTests.testTreeModelClassExists(SpringappApplicationTests.java:113)
+
+testApiServiceHasServiceAnnotation  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.service.ApiService or annotation org.springframework.stereotype.Service does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkAnnotationExists(SpringappApplicationTests.java:224)
+	at com.example.springapp.SpringappApplicationTests.testApiServiceHasServiceAnnotation(SpringappApplicationTests.java:188)
+
+testDeleteTree  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.example.springapp.SpringappApplicationTests.testDeleteTree(SpringappApplicationTests.java:87)
+
+testTreeRepoHasRepositoryAnnotation  Time elapsed: 0.001 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.repository.TreeRepo or annotation org.springframework.stereotype.Repository does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkAnnotationExists(SpringappApplicationTests.java:224)
+	at com.example.springapp.SpringappApplicationTests.testTreeRepoHasRepositoryAnnotation(SpringappApplicationTests.java:183)
+
+testTreeModelHasIdAnnotation  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.model.Tree or annotation javax.persistence.Id does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkAnnotationExists(SpringappApplicationTests.java:224)
+	at com.example.springapp.SpringappApplicationTests.testTreeModelHasIdAnnotation(SpringappApplicationTests.java:178)
+
+testPostTree  Time elapsed: 0.004 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<404>
+	at com.example.springapp.SpringappApplicationTests.testPostTree(SpringappApplicationTests.java:41)
+
+testTreeControllerHasDeleteMappingAnnotation  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Class com.example.springapp.controller.TreeController or annotation org.springframework.web.bind.annotation.DeleteMapping does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkAnnotationExists(SpringappApplicationTests.java:224)
+	at com.example.springapp.SpringappApplicationTests.testTreeControllerHasDeleteMappingAnnotation(SpringappApplicationTests.java:168)
+
+testTreeControllerHasAutowiredField  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Field apiService in class com.example.springapp.controller.TreeController does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkFieldExists(SpringappApplicationTests.java:204)
+	at com.example.springapp.SpringappApplicationTests.testTreeControllerHasAutowiredField(SpringappApplicationTests.java:118)
+
+testTreeModelHasIdField  Time elapsed: 0.002 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Field treeId in class com.example.springapp.model.Tree does not exist.
+	at com.example.springapp.SpringappApplicationTests.checkFieldExists(SpringappApplicationTests.java:204)
+	at com.example.springapp.SpringappApplicationTests.testTreeModelHasIdField(SpringappApplicationTests.java:123)
+
